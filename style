@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Section Styling */
+.section {
+    position: relative;
+    margin: 20px auto;
+    padding: 40px 20px 20px 20px;
+    max-width: 900px;
+    border: 2px solid #333;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.section-content {
+    padding-top: 30px;
+}
+
+/* Different colors for sections */
+.section-1 { background-color: #e0f7fa; }
+.section-2 { background-color: #ffe0b2; }
+.section-3 { background-color: #dcedc8; }
+.section-4 { background-color: #f8bbd0; }
+
+/* Responsive Layout */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .section {
+        margin: 15px;
+        padding: 35px 15px 15px 15px;
+    }
+    .section-title {
+        top: 8px;
+        right: 8px;
+    }
+    .navbar .nav-links {
+        gap: 10px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .section {
+        margin: 10px;
+        padding: 30px 10px 10px 10px;
+    }
+    .section-title {
+        top: 5px;
+        right: 5px;
+        font-size: 0.9em;
+    }
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar .nav-links li a {
+        display: block;
+        width: 100%;
+    }
+}
